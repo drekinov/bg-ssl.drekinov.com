@@ -1,0 +1,14 @@
+# Laravel Default
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+.idea
+
+# Packages
+_ide_helpers.php
+_ide_helper_models.php
