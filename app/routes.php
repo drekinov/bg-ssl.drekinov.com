@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return View::make('hello');
-});
+Route::resource('sites', 'SitesController', ['only' => ['index', 'show']]);
+Route::resource('knowledge', 'KnowledgeController', ['only' => ['index', 'show']]);
+
+Route::get('/about', array('as' => 'about', 'uses' => 'HomeController@showAbout'));
+
+Route::get('/', array('as' => 'index', 'uses' => 'HomeController@showWelcome'));
